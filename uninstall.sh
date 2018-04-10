@@ -7,6 +7,6 @@ home=$HOME
 unlink ${home}/.bash_profile
 unlink ${home}/.vim
 unlink ${home}/.vimrc
-unlink ${home}/prezto
+unlink ${home}/.zprezto
 unlink ${home}/.autojump
 unlink ${home}/.tmux.conf
