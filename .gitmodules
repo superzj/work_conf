@@ -1,9 +1,6 @@
 [submodule "autojump"]
 	path = autojump
 	url = https://github.com/superzj/autojump.git
-[submodule "prezto"]
-	path = prezto
-	url = https://github.com/superzj/prezto.git
 [submodule "vim"]
 	path = vim
 	url = https://github.com/superzj/vim.git
