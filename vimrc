@@ -12,10 +12,10 @@ set ambiwidth=double
 set hlsearch
 
 "set fileencoding=cp936
-"set encoding=utf-8
+"set encoding=cp936
 "set termencoding=cp936
-"set enc=cp936
-set fencs=utf8,cp936,gbk,gb2312,gb18030
+set fileencodings=gbk,gb2312,gb18030,ucs-bom,utf-8,utf-16,big5,latin1
+"set fileencodings=utf8,cp936,gbk,gb2312,gb18030
 filetype indent plugin on
 "set magic
 "runtime ftplugin/man.vim
@@ -170,10 +170,8 @@ map <F6> :AddTitle<CR>
 
 autocmd BufNewFile *.cpp,*.[ch],*.sh,*.rb,*.java,*.py exec ":call SetTitle()"
 
-" 状态栏
-set laststatus=2      " 总是显示状态栏
+set laststatus=2
 highlight StatusLine cterm=bold ctermfg=yellow ctermbg=blue
-" 获取当前路径，将$HOME转化为~
 function! CurDir()
 	let curdir = substitute(getcwd(), $HOME, "~", "g")
 	return curdir
